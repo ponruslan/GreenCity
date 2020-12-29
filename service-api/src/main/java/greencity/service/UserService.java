@@ -422,6 +422,7 @@ public interface UserService {
 
     /**
      * Method that finds all friends that send you request.
+     *
      * @param pageable {@link Pageable}.
      * @param userId   {@link Long} -current user's id.
      * @return {@link PageableDto} of {@link RecommendedFriendDto} instances.
@@ -430,7 +431,8 @@ public interface UserService {
 
     /**
      * Method that finds all friends that send you request.
-     * @param userId   {@link Long} -current user's id.
+     *
+     * @param userId {@link Long} -current user's id.
      * @return {@link List} of {@link UserVO} instances.
      */
     List<UserVO> getAllUserFriendRequests(Long userId);
